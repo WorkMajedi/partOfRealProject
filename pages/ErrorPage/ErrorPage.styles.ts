@@ -1,0 +1,67 @@
+import { styled } from '@mui/material/styles';
+import { Box, BoxProps } from '@mui/material';
+
+export const ErrorPageStyled = styled(Box)<BoxProps>(({ theme }) => ({
+    position: 'relative',
+    height: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    '.notfound': {
+        maxWidth: '520px',
+        width: '100%',
+        lineHeight: 1.4,
+        textAlign: 'center',
+    },
+    '.notfound .notfound-404': { position: 'relative', height: '240px' },
+    '.notfound .notfound-404 h1': {
+        fontFamily: "'Montserrat', sans-serif",
+        position: 'absolute',
+        left: '50%',
+        top: '50%',
+        WebkitTransform: 'translate(-50%, -50%)',
+        msTransform: 'translate(-50%, -50%)',
+        transform: 'translate(-50%, -50%)',
+        fontSize: '252px',
+        fontWeight: 900,
+        margin: '0px',
+        color: '#262626',
+        textTransform: 'uppercase',
+        letterSpacing: '-40px',
+        marginLeft: '-20px',
+    },
+    '.notfound .notfound-404 h1>span': { textShadow: '-8px 0px 0px #fff' },
+    '.notfound .notfound-404 h3': {
+        fontFamily: "'Cabin', sans-serif",
+        position: 'relative',
+        fontSize: '16px',
+        fontWeight: 700,
+        textTransform: 'uppercase',
+        color: '#262626',
+        margin: '0px',
+        letterSpacing: '3px',
+        paddingLeft: '6px',
+    },
+    '.notfound h2': {
+        fontFamily: "'Cabin', sans-serif",
+        fontSize: '20px',
+        fontWeight: 400,
+        textTransform: 'uppercase',
+        color: '#000',
+        marginTop: '0px',
+        marginBottom: '25px',
+    },
+    '@media only screen and (max-width: 767px)': {
+        '.notfound .notfound-404': { height: '200px' },
+        '.notfound .notfound-404 h1': { fontSize: '200px' },
+    },
+    '@media only screen and (max-width: 480px)': {
+        '.notfound .notfound-404': { height: '162px' },
+        '.notfound .notfound-404 h1': {
+            fontSize: '162px',
+            height: '150px',
+            lineHeight: '162px',
+        },
+        '.notfound h2': { fontSize: '16px' },
+    },
+}));

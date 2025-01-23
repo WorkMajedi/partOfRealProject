@@ -1,0 +1,102 @@
+html,
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow-x: hidden !important;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #001924;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.shake-animate {
+    animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.shake-animate .MuiInputLabel-root.Mui-focused {
+    color: #e52200;
+}
+
+.shake-animate .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    box-shadow: -1px 1px 4px 4px #ffe9e5;
+    border-color: #e52200;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.MuiPaper-root.MuiPaper-elevation {
+    border-radius: 4px;
+    box-shadow: 0px 7px 20px 0px #00000026;
+    margin-top: 4px;
+    padding: 2px 4px;
+}
+
+.MuiPaper-root.MuiPaper-elevation .MuiMenuItem-root {
+    border-radius: 2px;
+}
+
+.MuiTooltip-tooltip {
+    background-color: #000 !important;
+    font-size: 0.9rem !important;
+    padding: 0.4rem 0.8rem !important;
+}
+
+.error {
+    background: rgba(0, 0, 0, 0.168) 200;
+    border-color: #e52200 !important;
+    border-width: 3px !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
